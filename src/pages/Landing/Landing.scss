@@ -1,3 +1,13 @@
+@use "../../styles/partials/responsive" as *;
+
 .landing {
   padding: 2rem 2rem;
+
+  @include media-tablet {
+    padding: 2rem 6rem;
+  }
+
+  @include media-desktop {
+    padding: 2rem 10rem;
+  }
 }

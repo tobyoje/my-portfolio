@@ -1,0 +1,55 @@
+@use "../../styles/partials/responsive" as *;
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0rem;
+  color: white;
+
+  @include media-desktop {
+    padding: 5rem 10rem;
+  }
+
+  &__heading {
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+.works-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .work-box {
+// }
+
+.work-img {
+  width: 40rem;
+}
+
+.work-info__name {
+  font-size: 2.5rem;
+  padding: 2rem 0 1rem 0;
+  font-weight: 400;
+}
+
+.work-info__desc {
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+// .work-info {
+// }
+
+.work-info__link {
+  color: white;
+
+  background-image: url("../../assets/icons/link.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  padding-left: 2.6rem;
+}
