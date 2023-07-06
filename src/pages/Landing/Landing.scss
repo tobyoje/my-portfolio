@@ -1,9 +1,13 @@
 @use "../../styles/partials/responsive" as *;
 
 .landing {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
   padding: 2rem 2rem;
 
   @include media-tablet {
+    height: 100vh;
     padding: 2rem 6rem;
   }
 

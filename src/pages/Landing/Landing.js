@@ -1,7 +1,5 @@
-import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/Hero/Hero";
-import PostList from "../../components/PostList/PostList";
-import ProjectList from "../../components/ProjectList/ProjectList";
 import "./Landing.scss";
 
 const Landing = () => {
@@ -9,9 +7,7 @@ const Landing = () => {
     <>
       <div className="landing">
         <Hero />
-        <ProjectList />
-        <PostList />
-        <Contact />
+        <Footer />
       </div>
     </>
   );
