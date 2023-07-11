@@ -5,6 +5,8 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
+        <h2 className="footer__heading">Connect with me </h2>
+
         <div class="connect">
           <div className="connect__button">
             <Link to="mailto:hello@connecttoby.com" target="_blank">

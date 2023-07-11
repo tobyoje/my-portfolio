@@ -1,13 +1,18 @@
 @use "../../styles/partials/responsive" as *;
 
+
+
 .project-list {
+  background-color: #f6f9ff;
   display: flex;
   flex-direction: column;
   padding: 5rem 0rem;
-  color: white;
+  color: black;
+  border-radius: 1.5rem;
 
   @include media-desktop {
     padding: 5rem 10rem;
+    margin-bottom: 10rem;
   }
 
   &__heading {
@@ -27,6 +32,7 @@
 
 .work-img {
   width: 40rem;
+  border-radius: 0.5rem;
 }
 
 .work-info__name {
@@ -45,11 +51,11 @@
 // }
 
 .work-info__link {
-  color: white;
+  color: black;
 
   background-image: url("../../assets/icons/link.svg");
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 2rem;
+  background-size: 1.8rem;
   padding-left: 2.6rem;
 }

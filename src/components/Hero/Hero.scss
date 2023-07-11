@@ -7,43 +7,21 @@
   color: white;
 
   @include media-desktop {
-    padding: 5rem 10rem;
+    padding: 0 10rem 35rem 10rem;
+    height: 100vh;
+    justify-content: flex-end;
   }
 
   &__image {
-
     width: 10rem;
     @include media-desktop {
-      width: 100%;
-
+      width: 70%;
     }
   }
 
-  &__heading {
-    padding-top: 2rem;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 3rem;
-    letter-spacing: 0.1rem;
-
-    @include media-desktop {
-      font-size: 5.5rem;
-      letter-spacing: 0.2rem;
-    }
-  }
-
-  &__subtitle {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-    font-weight: 300;
-
-    @include media-desktop {
-      padding: 3rem 0 0 0;
-      font-size: 2.4rem;
-      letter-spacing: 0.1rem;
-    }
-  }
   &__bio {
+    display: flex;
+    flex-direction: column;
     padding-top: 5rem;
     font-size: 2rem;
     line-height: 2.8rem;
@@ -53,6 +31,50 @@
       font-size: 3.2rem;
       line-height: 4.2rem;
       letter-spacing: 0.02rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.8rem 0;
+    opacity: 0;
+    animation: fade-in 2s ease-in-out forwards;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    color: #006cff;
+
+    @include media-desktop {
+      font-size: 3.5rem;
+      letter-spacing: 0.2rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__subheading {
+    padding-right: 15rem;
+
+    animation: fade-in 5s ease-in-out forwards;
+
+    div {
+      overflow: hidden;
+      position: relative;
+      height: 96px;
+      padding-top: 10px;
+      margin-top: -10px;
+      li {
+        color: #eee;
+        height: 45px;
+        margin-bottom: 45px;
+        list-style: none;
+        padding: 0;
+      }
     }
   }
 
@@ -83,7 +105,6 @@
   padding: 0;
 
   @include media-tablet {
-    margin-left: 7rem;
   }
 }
 
@@ -97,5 +118,40 @@
   @include media-tablet {
     align-items: center;
     flex-direction: row;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.flip {
+  padding: 0;
+  animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip {
+  0% {
+    margin-top: -184px;
+  }
+  5% {
+    margin-top: -94px;
+  }
+  50% {
+    margin-top: -94px;
+  }
+  55% {
+    margin-top: 4px;
+  }
+  99.99% {
+    margin-top: 4px;
+  }
+  100% {
+    margin-top: -184px;
   }
 }
