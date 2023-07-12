@@ -13,6 +13,7 @@
   @include media-desktop {
     padding: 5rem 10rem;
     margin-bottom: 10rem;
+
   }
 
   &__heading {
@@ -23,8 +24,10 @@
 }
 
 .works-box {
+  
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10rem;
 }
 
 // .work-box {
@@ -32,6 +35,8 @@
 
 .work-img {
   width: 40rem;
+  height: 30rem;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
