@@ -1,19 +1,17 @@
 import "./ProjectList.scss";
 import pcs from "../../assets/images/works/pcs.gif";
-import redCalc from "../../assets/images/works/red-calculator.jpg";
+import redCalc from "../../assets/images/works/red-calculator.gif";
 import quickProfile from "../../assets/images/works/quick-profile.jpg";
 import topeAnderson from "../../assets/images/works/tope-anderson.jpg";
 import finaQore from "../../assets/images/works/finaqore.jpeg";
 import kaywise from "../../assets/images/works/kaywise.jpeg";
 import foodtribe from "../../assets/images/works/foodtribe.gif";
-
-
-
+import dash from "../../assets/images/works/dashboard.jpg";
 
 const ProjectList = () => {
   return (
     <>
-      <div className="project-list">
+      <div className="project-list" id="projects">
         <h2 className="project-list__heading">Some of my works </h2>
 
         <div className="works-box">
@@ -74,7 +72,6 @@ const ProjectList = () => {
           </div>
         </div>
 
-
         <div className="works-box">
           <div className="work-box">
             <img className="work-img" src={topeAnderson} alt="Tope Anderson" />
@@ -88,18 +85,16 @@ const ProjectList = () => {
           </div>
 
           <div className="work-box">
-            <img className="work-img" src={finaQore} alt="Finaqore" />
+            <img className="work-img" src={dash} alt="Dashboard" />
             <div className="work-info">
-              <p className="work-info__name">FinaQore</p>
-              <p className="work-info__desc">Web Design & Brand Identity</p>
-              <a className="work-info__link" href="https://finaqore.com/">
+              <p className="work-info__name">Doctors Portal</p>
+              <p className="work-info__desc">UI Design</p>
+              {/* <a className="work-info__link" href="https://finaqore.com/">
                 View Project
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
-
-
 
         <div className="works-box">
           <div className="work-box">
@@ -124,10 +119,6 @@ const ProjectList = () => {
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </>
   );
