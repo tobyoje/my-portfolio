@@ -8,21 +8,26 @@ const Hero = () => {
         <div className="hero__bio">
           <div> Hello,</div>
           <div className="hero__info">
-            I'm <h2 className="hero__heading hero__heading--left">Toby </h2> , a
-            <h2 className="hero__heading">
-              Software Engineer & UI/UX Designer.
-            </h2>
+            I'm &nbsp;
+            <span style={{ color: "#006cff", fontWeight: 500 }}>Toby</span>, a &nbsp;
+            <span style={{ color: "#006cff", fontWeight: 500 }}>
+              Software Engineer &nbsp;
+            </span>
+            &  &nbsp;
+            <span style={{ color: "#006cff", fontWeight: 500 }}>
+              UI/UX Designer.
+            </span>
           </div>
           <div className="hero__subheading">
-         
             <div>
-        <ul class="flip">
-            <li>I convert complex human problems into basic simple solutions with
-            design and codes.</li>
-            <li>I am a creative thinker and a problem solver.</li>
-           
-        </ul>
-    </div>
+              <ul class="flip">
+                <li>
+                  I convert complex human problems into simple solutions with
+                  design and codes.
+                </li>
+                <li>I am a creative thinker and a problem solver.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
