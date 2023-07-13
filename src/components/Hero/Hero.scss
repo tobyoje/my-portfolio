@@ -3,7 +3,7 @@
 .hero {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem 20rem 2rem;
+  padding: 2rem 2rem 25rem 2rem;
   color: white;
   height: 100vh;
   justify-content: flex-end;
@@ -68,6 +68,11 @@
     letter-spacing: 0.1rem;
     color: #006cff;
     letter-spacing: 0.2rem;
+
+    &--left{
+      margin-left: 1rem;
+
+    }
 
     @include media-tablet {
       font-size: 2.2rem;

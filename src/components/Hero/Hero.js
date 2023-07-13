@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero__bio">
           <div> Hello,</div>
           <div className="hero__info">
-            I'm <h2 className="hero__heading">Toby </h2> , a
+            I'm <h2 className="hero__heading hero__heading--left">Toby </h2> , a
             <h2 className="hero__heading">
               Software Engineer & UI/UX Designer.
             </h2>
