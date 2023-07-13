@@ -3,15 +3,12 @@
 .footer {
   font-size: 2.4rem;
   background-color: #006cff;
-  border-radius: 1.5rem;
-
-
+  padding: 3rem 2rem;
 
   @include media-tablet {
+    border-radius: 1.5rem;
     width: 680px;
     padding: 5rem 5rem;
-
-
   }
 
   @include media-desktop {
@@ -25,14 +22,22 @@
     width: 1300px;
     max-width: 1300px;
     padding: 5rem 10rem;
-
   }
 
   &__heading {
-    padding-bottom: 4rem;
-    font-size: 2.4rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: white;
+
+    @include media-tablet {
+      padding-bottom: 3rem;
+      font-size: 2rem;
+    }
+
+    @include media-desktop {
+      font-size: 2.4rem;
+    }
   }
 }
 

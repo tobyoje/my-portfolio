@@ -9,11 +9,13 @@
   background-color: #f6f9ff;
   display: flex;
   flex-direction: column;
-  padding: 5rem 0rem;
+  padding: 3rem 2rem;
   color: black;
-  border-radius: 1.5rem;
+  width: 100%;
 
   @include media-tablet {
+    border-radius: 1.5rem;
+
     width: 680px;
     padding: 5rem 5rem;
     margin-bottom: 4rem;
@@ -29,20 +31,22 @@
   @include media-widescreen {
     width: 1300px;
     max-width: 1300px;
-        padding: 5rem 10rem;
-
+    padding: 5rem 10rem;
   }
 
   &__heading {
-padding-left: 4rem;
-    padding-bottom: 5rem;
-    font-size: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2.4rem;
     font-weight: 400;
 
+    @include media-tablet {
+      padding-bottom: 5rem;
+      font-size: 2.6rem;
+    }
 
     @include media-desktop {
+      font-size: 3rem;
       padding-left: 0;
-
     }
   }
 }
@@ -50,8 +54,12 @@ padding-left: 4rem;
 .works-box {
   display: flex;
   flex-direction: column;
+  // padding: 0 5rem;
   align-items: center;
 
+  @include media-tablet {
+    padding: 0 0;
+  }
 
   @include media-desktop {
     flex-direction: row;
@@ -61,52 +69,68 @@ padding-left: 4rem;
 }
 
 .work-box {
-  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+
+  @include media-tablet {
+    margin-bottom: 10rem;
+  }
 
   @include media-desktop {
     margin-bottom: 0;
-
   }
-
-
 }
 
 .work-img {
-  width: 40rem;
-  height: 30rem;
+  width: 28rem;
+  height: 20rem;
   object-fit: cover;
   border-radius: 0.5rem;
 
   @include media-tablet {
-    width: 50rem;
-    height: 40rem;
+    width: 55rem;
+    height: 45rem;
   }
 
   @include media-desktop {
     width: 45rem;
     height: 35rem;
-
   }
 }
 
 .work-info__name {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding: 2rem 0 1rem 0;
   font-weight: 400;
+
+  @include media-tablet {
+    font-size: 2rem;
+  }
+
+  @include media-desktop {
+    font-size: 2.2rem;
+  }
 }
 
 .work-info__desc {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 200;
   padding-bottom: 1rem;
+
+  @include media-tablet {
+    font-size: 1.6rem;
+  }
 }
 
-// .work-info {
-// }
+.work-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .work-info__link {
   color: black;
-
   background-image: url("../../assets/icons/link.svg");
   background-position: left center;
   background-repeat: no-repeat;

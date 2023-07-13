@@ -3,8 +3,10 @@
 .hero {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0rem;
+  padding: 2rem 2rem 20rem 2rem;
   color: white;
+  height: 100vh;
+  justify-content: flex-end;
 
   @include media-tablet {
     height: 100vh;
@@ -42,7 +44,6 @@
 
     font-weight: 300;
 
-
     @include media-desktop {
       font-size: 3.2rem;
       line-height: 4.2rem;
@@ -53,6 +54,7 @@
   &__info {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0.8rem 0;
     opacity: 0;
@@ -60,14 +62,17 @@
   }
 
   &__heading {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 3rem;
     letter-spacing: 0.1rem;
     color: #006cff;
-    margin-left: 1rem;
     letter-spacing: 0.2rem;
 
+    @include media-tablet {
+      font-size: 2.2rem;
+      margin-left: 1rem;
+    }
 
     @include media-desktop {
       font-size: 3.5rem;
@@ -76,9 +81,11 @@
   }
 
   &__subheading {
-    padding-right: 15rem;
-
     animation: fade-in 5s ease-in-out forwards;
+
+    @include media-tablet {
+      padding-right: 15rem;
+    }
 
     div {
       overflow: hidden;
@@ -86,12 +93,21 @@
       height: 96px;
       padding-top: 10px;
       margin-top: -10px;
+      width: 30rem;
+
+      @include media-tablet {
+        width: 100%;
+      }
       li {
         color: #eee;
         height: 45px;
         margin-bottom: 45px;
         list-style: none;
         padding: 0;
+
+        @include media-tablet {
+          height: 45px;
+        }
       }
     }
   }
