@@ -11,6 +11,7 @@ import dash from "../../assets/images/works/dashboard.jpg";
 const ProjectList = () => {
   return (
     <>
+    <div className="projects">
       <div className="project-list" id="projects">
         <h2 className="project-list__heading">Some of my works </h2>
 
@@ -119,6 +120,7 @@ const ProjectList = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

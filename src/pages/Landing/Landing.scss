@@ -1,77 +1,76 @@
 @use "../../styles/partials/responsive" as *;
 
 .landing {
-  background-color: black;
+  // background-color: black;
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
 
   @include media-tablet {
-    padding: 2rem 6rem;
+    align-items: center;
+    padding: 2rem 6rem 4rem 6rem;
   }
 
   @include media-desktop {
-
-   
- 
-    padding: 4rem 10rem;
-  }
-}
-
-.header {
-  padding: 2rem 2rem;
-
-  @include media-tablet {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10rem;
-  }
-
-  &__image {
-    @include media-desktop {
-      width: 15%;
-    }
-  }
-
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    color: white;
-    font-size: 5rem;
     padding: 4rem 10rem;
-
-    &--close {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    &--icon {
-      width: 5rem;
-      animation: pulse 3s infinite;
-
-      &:hover {
-        animation: none;
-      }
-    }
-
-    &--x {
-      width: 7rem;
-    }
-  }
-
-  &__menu-items {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 20rem;
-    li {
-      list-style: none;
-      margin: 0 3rem;
-    }
   }
 }
+
+// .header {
+//   padding: 2rem 2rem;
+
+//   @include media-tablet {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0 10rem;
+//   }
+
+//   &__image {
+//     @include media-desktop {
+//       width: 15%;
+//     }
+//   }
+
+//   &__menu {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 100vh;
+//     color: white;
+//     font-size: 5rem;
+//     padding: 4rem 10rem;
+
+//     &--close {
+//       display: flex;
+//       justify-content: flex-end;
+//     }
+
+//     &--icon {
+//       width: 5rem;
+//       animation: pulse 3s infinite;
+
+//       &:hover {
+//         animation: none;
+//       }
+//     }
+
+//     &--x {
+//       width: 7rem;
+//     }
+//   }
+
+//   &__menu-items {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding-bottom: 20rem;
+//     li {
+//       list-style: none;
+//       margin: 0 3rem;
+//     }
+//   }
+// }
 
 @keyframes pulse {
   0% {

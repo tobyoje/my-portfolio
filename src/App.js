@@ -6,7 +6,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 function App() {
   return (
 
-    <div>
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
