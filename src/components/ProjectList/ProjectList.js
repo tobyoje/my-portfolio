@@ -27,7 +27,8 @@ const ProjectList = () => {
                 <p className="work-info__desc">Utility app</p>
                 <a
                   className="work-info__link"
-                  href="https://github.com/tobyoje/calculator" target="_blank"
+                  href="https://toby-calculator.vercel.app/"
+                  target="_blank"
                 >
                   View Project
                 </a>
@@ -41,7 +42,8 @@ const ProjectList = () => {
                 <p className="work-info__desc">Profile page making app</p>
                 <a
                   className="work-info__link"
-                  href="https://github.com/tobyoje/profile-builder-client" target="_blank"
+                  href="https://github.com/tobyoje/profile-builder-client"
+                  target="_blank"
                 >
                   View Project
                 </a>
@@ -118,9 +120,13 @@ const ProjectList = () => {
               <div className="work-info">
                 <p className="work-info__name">FinaQore</p>
                 <p className="work-info__desc">Web Design & Brand Identity</p>
-                <a className="work-info__link" href="https://finaqore.com/" target="_blank">
+                {/* <a
+                  className="work-info__link"
+                  href="https://finaqore.com/"
+                  target="_blank"
+                >
                   View Project
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
