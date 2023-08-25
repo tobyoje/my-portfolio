@@ -1,30 +1,30 @@
 @use "../../styles/partials/responsive" as *;
 
-.landing {
-  // background-color: black;
-  display: flex;
-  flex-direction: column;
-  // padding: 2rem 2rem;
+// .landing {
+//   // background-color: black;
+//   display: flex;
+//   flex-direction: column;
+//   // padding: 2rem 2rem;
 
-  @include media-tablet {
-    align-items: center;
-    padding: 2rem 6rem 4rem 6rem;
-  }
+//   @include media-tablet {
+//     align-items: center;
+//     padding: 2rem 6rem 4rem 6rem;
+//   }
 
-  @include media-desktop {
-    align-items: center;
-    padding: 4rem 10rem 8rem 10rem;
-  }
-}
+//   @include media-desktop {
+//     align-items: center;
+//     padding: 4rem 10rem 8rem 10rem;
+//   }
+// }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+// @keyframes pulse {
+//   0% {
+//     transform: scale(1);
+//   }
+//   50% {
+//     transform: scale(1.2);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }

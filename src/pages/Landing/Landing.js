@@ -11,11 +11,9 @@ import closeIcon from "../../assets/icons/close.svg";
 const Landing = () => {
   return (
     <>
-      <div className="landing">
-        <Header />
+      <div>
         <Hero />
         <ProjectList />
-        <Footer />
       </div>
     </>
   );

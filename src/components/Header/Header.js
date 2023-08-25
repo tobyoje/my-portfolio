@@ -4,13 +4,14 @@ import menu from "../../assets/icons/menu.svg";
 import closeIcon from "../../assets/icons/close.svg";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <div className="header">
         <div>
-          <img className="header__image" src={TobyIMG} alt="Toby" />
+        <Link to="/">   <img className="header__image" src={TobyIMG} alt="Toby" /> </Link>
         </div>
 
 <div>
@@ -19,11 +20,11 @@ const Header = () => {
 </div>
 
         <div className="header__menu-container">
-          <a href="#projects">
+          <a href="/#projects">
             <li>Works</li>
           </a>
 
-          <a href="#contact">
+          <a href="/#contact">
             <li>Contact</li>
           </a>
         </div>

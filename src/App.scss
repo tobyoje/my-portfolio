@@ -5,4 +5,33 @@
   background-color: black;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @include media-tablet {
+    align-items: center;
+    padding: 2rem 6rem 4rem 6rem;
+  }
+
+  @include media-desktop {
+    align-items: center;
+    padding: 4rem 10rem 8rem 10rem;
+  }
 }
+
+// .landing {
+//   // background-color: black;
+//   display: flex;
+//   flex-direction: column;
+//   // padding: 2rem 2rem;
+
+//   @include media-tablet {
+//     align-items: center;
+//     padding: 2rem 6rem 4rem 6rem;
+//   }
+
+//   @include media-desktop {
+//     align-items: center;
+//     padding: 4rem 10rem 8rem 10rem;
+//   }
+// }

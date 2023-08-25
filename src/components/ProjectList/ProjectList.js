@@ -1,19 +1,63 @@
 import "./ProjectList.scss";
 import pcs from "../../assets/images/works/pcs.gif";
 import redCalc from "../../assets/images/works/red-calculator.gif";
+import projectMgt from "../../assets/images/works/project-mgt.gif";
 import quickProfile from "../../assets/images/works/quick-profile.jpg";
 import topeAnderson from "../../assets/images/works/tope-anderson.jpg";
 import finaQore from "../../assets/images/works/finaqore.jpeg";
 import kaywise from "../../assets/images/works/kaywise.jpeg";
 import foodtribe from "../../assets/images/works/foodtribe.gif";
 import dash from "../../assets/images/works/dashboard.jpg";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProjectList = () => {
+  const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="projects">
         <div className="project-list" id="projects">
           <h2 className="project-list__heading">Some of my works </h2>
+
+
+          <div className="works-box">
+            <div className="work-box">
+              <img
+                className="work-img"
+                src={projectMgt}
+                alt="Project Management App"
+              />
+              <div className="work-info">
+                <p className="work-info__name">Project Management App</p>
+                <p className="work-info__desc">Tracking projects and tasks</p>
+                <Link
+                  className="work-info__link"
+                  to="/work/project-management"
+                  onClick={scrollToTop}
+                >
+                  View Project
+                </Link>
+              </div>
+            </div>
+
+            <div className="work-box">
+              <img className="work-img" src={quickProfile} alt="QuickProfile" />
+              <div className="work-info">
+                <p className="work-info__name">Quick Profile</p>
+                <p className="work-info__desc">Profile page making app</p>
+                <a
+                  className="work-info__link"
+                  href="https://github.com/tobyoje/profile-builder-client"
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
 
           <div className="works-box">
             <div className="work-box">
@@ -25,13 +69,13 @@ const ProjectList = () => {
               <div className="work-info">
                 <p className="work-info__name">Red-themed Calculator</p>
                 <p className="work-info__desc">Utility app</p>
-                <a
+                <Link
                   className="work-info__link"
-                  href="https://toby-calculator.vercel.app/"
-                  target="_blank"
+                  to="/work/calculator/"
+                  onClick={scrollToTop}
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -57,9 +101,9 @@ const ProjectList = () => {
               <div className="work-info">
                 <p className="work-info__name">Foodtribe</p>
                 <p className="work-info__desc">Product & UI Design</p>
-                {/* <a className="work-info__link" href="#" target="_blank">
-                View Project
-              </a> */}
+                <Link className="work-info__link" to="/work/project-management">
+                  View Project
+                </Link>
               </div>
             </div>
 
