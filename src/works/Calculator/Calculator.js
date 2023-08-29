@@ -23,6 +23,9 @@ const Calculator = () => {
             effortlessly wherever you are, with a calculator that's as
             straightforward as it is stylish.
           </p>
+
+          <div className="project__links">
+
           <a
             className="project__link"
             href="https://toby-calculator.vercel.app/"
@@ -38,6 +41,7 @@ const Calculator = () => {
           >
             View Project on Github
           </a>
+          </div>
         </div>
       </div>
     </>

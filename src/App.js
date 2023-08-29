@@ -6,11 +6,13 @@ import ProjectManagement from "./works/ProjectManagement/ProjectManagement";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Calculator from "./works/Calculator/Calculator";
+import QuickProfile from "./works/QuickProfile/QuickProfile";
+import Foodtribe from "./works/Foodtribe/Foodtribe";
 
 function App() {
   return (
     <div className="app">
-      <BrowserRouter >
+      <BrowserRouter>
         <Header />
 
         <Routes>
@@ -21,6 +23,9 @@ function App() {
             path="work/project-management"
             element={<ProjectManagement />}
           />
+          <Route path="work/quick-profile" element={<QuickProfile />} />
+          <Route path="work/foodtribe" element={<Foodtribe />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

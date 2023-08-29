@@ -1,0 +1,10 @@
+@use "../../styles/partials/responsive" as *;
+
+.quickprofile_img {
+  width: 30rem;
+  height: auto;
+
+  @include media-desktop {
+    width: 50rem;
+  }
+}

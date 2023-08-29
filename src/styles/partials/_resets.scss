@@ -42,24 +42,34 @@ h6 {
 }
 
 .project {
-  padding: 10rem 20rem;
-  margin-bottom: 50rem;
+  padding: 5rem 2rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include media-desktop {
+    padding: 10rem 20rem;
+  }
 
   &__title {
     color: white;
     font-family: "Acorn";
     text-transform: capitalize;
-    font-size: 4rem;
+    font-size: 2.3rem;
     text-align: center;
     margin-bottom: 5rem;
+    line-height: 3.5rem;
+
+    @include media-desktop {
+      font-size: 4rem;
+
+    }
   }
 
   &__img {
     width: 28rem;
-    height: 20rem;
+    height: auto;
     object-fit: cover;
     border-radius: 0.5rem;
 
@@ -78,21 +88,42 @@ h6 {
   &__description {
     color: white;
     font-family: "Outfit", Helvetica;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 200;
     letter-spacing: 0.06rem;
     line-height: 160%;
     margin-bottom: 2rem;
+
+    @include media-desktop{
+      font-size: 2rem;
+
+    }
   }
 
+
+  &__links{
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablet {
+      flex-direction: row;
+    }
+  }
   &__sub-title {
     color: white;
     font-family: "Acorn";
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     margin-top: 4rem;
     margin-bottom: 2rem;
+    line-height: 3.5rem;
+
+
+    @include media-desktop{
+      font-size: 3rem;
+
+    }
   }
 
   &__link {
@@ -103,12 +134,20 @@ h6 {
     background-size: 1.8rem;
     padding-left: 2.6rem;
     margin-right: 4rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+    @include media-tablet{
+      margin-bottom: 0;
+    }
+
+    @include media-desktop{
+      font-size: 1.8rem;
+ 
+    }
 
     &:hover {
       text-decoration: underline;
     }
   }
-
- 
 }

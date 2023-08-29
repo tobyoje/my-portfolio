@@ -19,6 +19,9 @@ const ProjectManagement = () => {
             From task assignment to progress tracking, our app empowers teams to
             collaborate seamlessly and achieve their goals efficiently.
           </p>
+
+          <div className="project__links">
+
           <a
             className="project__link"
             href="https://project-management-toby.vercel.app/"
@@ -40,6 +43,8 @@ const ProjectManagement = () => {
           >
             Back-end on Github
           </a>
+          </div>
+        
           <h1 className="project__sub-title"> 1. Introduction:</h1>
           <p className="project__description">
             In this case study, we will explore the design and development

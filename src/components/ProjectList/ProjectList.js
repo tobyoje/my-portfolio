@@ -3,6 +3,7 @@ import pcs from "../../assets/images/works/pcs.gif";
 import redCalc from "../../assets/images/works/red-calculator.gif";
 import projectMgt from "../../assets/images/works/project-mgt.gif";
 import quickProfile from "../../assets/images/works/quick-profile.jpg";
+import femag from "../../assets/images/works/femag.png";
 import topeAnderson from "../../assets/images/works/tope-anderson.jpg";
 import finaQore from "../../assets/images/works/finaqore.jpeg";
 import kaywise from "../../assets/images/works/kaywise.jpeg";
@@ -20,7 +21,6 @@ const ProjectList = () => {
       <div className="projects">
         <div className="project-list" id="projects">
           <h2 className="project-list__heading">Some of my works </h2>
-
 
           <div className="works-box">
             <div className="work-box">
@@ -47,17 +47,16 @@ const ProjectList = () => {
               <div className="work-info">
                 <p className="work-info__name">Quick Profile</p>
                 <p className="work-info__desc">Profile page making app</p>
-                <a
+                <Link
                   className="work-info__link"
-                  href="https://github.com/tobyoje/profile-builder-client"
-                  target="_blank"
+                  to="/work/quick-profile"
+                  onClick={scrollToTop}
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </div>
           </div>
-
 
           <div className="works-box">
             <div className="work-box">
@@ -80,30 +79,27 @@ const ProjectList = () => {
             </div>
 
             <div className="work-box">
-              <img className="work-img" src={quickProfile} alt="QuickProfile" />
+              <img className="work-img" src={foodtribe} alt="Food Tribe" />
               <div className="work-info">
-                <p className="work-info__name">Quick Profile</p>
-                <p className="work-info__desc">Profile page making app</p>
-                <a
+                <p className="work-info__name">Foodtribe</p>
+                <p className="work-info__desc">Product & UI Design</p>
+                <Link
                   className="work-info__link"
-                  href="https://github.com/tobyoje/profile-builder-client"
-                  target="_blank"
+                  to="/work/foodtribe"
+                  onClick={scrollToTop}
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="works-box">
             <div className="work-box">
-              <img className="work-img" src={foodtribe} alt="Tope Anderson" />
+              <img className="work-img" src={femag} alt="Femagpay" />
               <div className="work-info">
-                <p className="work-info__name">Foodtribe</p>
+                <p className="work-info__name">FemagPay</p>
                 <p className="work-info__desc">Product & UI Design</p>
-                <Link className="work-info__link" to="/work/project-management">
-                  View Project
-                </Link>
               </div>
             </div>
 
